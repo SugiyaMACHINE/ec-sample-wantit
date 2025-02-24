@@ -11,7 +11,7 @@ services:
     image: nginx:latest
     # 同期ファイルの指定
     volumes:
-      - ./docker/nginx:/etc/nginx/conf.d
+      - ./docker/nginx:/etc/nginx/conf.d  # /ローカル：/コンテナ
       - ./app:/var/www/html
     # 使用ポートの指定
     ports:
