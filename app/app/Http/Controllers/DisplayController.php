@@ -27,7 +27,7 @@ class DisplayController extends Controller
 
         var_dump($item_with_type);
     */
-        return view('home');
+        return view('index');
         /*        , [
             'items' => $items
        ]);

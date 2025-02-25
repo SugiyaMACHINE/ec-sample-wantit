@@ -15,7 +15,8 @@ echo 'test';
 </head>
 <body> <!-- 表示されるページ内容 -->
  <header> <!-- ヘッダー -->
-    ロゴ<a href="{{ route('index')}}"><img src="storage/logo.jpg"></a>
+  
+    ロゴ<a href="{{ route('index')}}"><img class="logo" src="storage/logo.jpg"></a>
     <a href="{{ route('cart')}}">カート</a>
     <div>
     <a href="{{ route('login')}}">ログイン</a> / <a href="{{ route('register')}}">会員登録</a>
