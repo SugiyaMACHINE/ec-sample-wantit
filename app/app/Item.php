@@ -9,7 +9,7 @@ class Item extends Model
 
     public function type()
     {
-        return $this->belongsToMany('App\Type');
+        return $this->belongsTo('App\Type', 'type_id', 'id');
     }
     public function company()
     {
@@ -19,15 +19,15 @@ class Item extends Model
     {
         return $this->hasOne('App\Order_detail');
     }
-    public function favorite()
+    public function favorites()
     {
         return $this->hasMany('App\Favorite');
     }
-    public function review()
+    public function reviews()
     {
         return $this->hasMany('App\Review');
     }
-    public function like()
+    public function likes()
     {
         return $this->hasMany('App\Like');
     }

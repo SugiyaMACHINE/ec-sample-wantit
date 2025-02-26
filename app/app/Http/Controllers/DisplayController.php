@@ -20,22 +20,25 @@ class DisplayController extends Controller
 {
     public function index()
     {
-        echo 'ようこそ';
-        /*        $item = new Item;
-        $items = $item->all();
-    $item_with_type = $item->with('type')->first()->toArray();
+        $item = new Item;
+        $items = $item->where('on_sale_flg', '1')->get()->toarray();
 
-        var_dump($item_with_type);
-    */
-        return view('index');
-        /*        , [
+        //var_dump($items);
+
+        return view('index', [
             'items' => $items
-       ]);
- */
+        ]);
     }
     public function search()
     {
+
         echo 'ようこそ';
+        $type = new Type;
+        $item_with_type = $type->item->where('on_sale_flg', '1')->get()->toArray();
+
+        var_dump($item_with_type);
+
+        return view('index', [$item_with_type]);
     }
     public function item_info()
     {

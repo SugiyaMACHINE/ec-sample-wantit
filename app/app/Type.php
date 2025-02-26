@@ -6,9 +6,9 @@ use Illuminate\Database\Eloquent\Model;
 
 class Type extends Model
 {
-
-    public function item()
+    public $timestamps = false;
+    public function type()
     {
-        return $this->belongsToMany('App\Item');
+        return $this;
     }
 }
