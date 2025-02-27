@@ -6,7 +6,7 @@
  <meta charset="UTF-8" /> <!-- 文字エンコーディングを指定 -->
  <meta name="description" content="ページの概要" /> <!-- ページの概要・説明 -->  <!-- Bootstrap CSS -->
  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
- <link rel="stylesheet" href="css/app.css"> <!-- 適用するCSS -->
+<link rel="stylesheet" href="{{ asset('/css/style.css') }}"> <!-- 適用するCSS -->
  <link rel="icon" href="storage/icon.jpg" sizes="32x32" /> <!-- タブアイコン -->
  <link rel="apple-touch-icon" href="storage/iconb.jpg" sizes="180x180" /> <!-- ホーム画面アイコン -->
 </head>
@@ -54,9 +54,6 @@
             <p class="card-title">商品名 </p>
             <ul class="list-unstyled mt-3 mb-4">
               <li>価格</li>
-              <li>2 GB of storage</li>
-              <li>Email support</li>
-              <li>Help center access</li>
             </ul>
           </div>
         </div>
